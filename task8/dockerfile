@@ -1,10 +1,9 @@
 FROM ruby:3.2-alpine
 
 WORKDIR /app
+
 COPY . .
 
-RUN ruby -c ferma.rb && ruby -c test_ferma.rb
-
-# RUN gem install test-unit
+RUN gem install test-unit
 
 CMD ["ruby", "test_ferma.rb"]
