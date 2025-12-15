@@ -4,8 +4,6 @@ from scipy.optimize import minimize_scalar
 import sympy as sp
 from typing import Tuple, Optional
 
-broken_string = "This will break the build
-
 class WeierstrassTheorem:
     """
     Класс для демонстрации теоремы Вейерштрасса о достижении экстремумов
